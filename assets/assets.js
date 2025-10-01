@@ -35,7 +35,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-
+import db_icon from "./mongodb.png";
+import cloud_icon from './firebase.png';
+import tools_icon from './vscode.png';
 export const assets = {
     user_image,
     code_icon,
@@ -73,5 +75,52 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    db_icon,
+    cloud_icon,
+    tools_icon,
 };
+
+export const infoList = [
+  {
+    icon: assets.code_icon,
+    iconDark: assets.code_icon_dark,
+    title: "Languages",
+    description: "C, C++, Python, Java, JavaScript",
+  },
+  {
+    icon: assets.edu_icon,
+    iconDark: assets.edu_icon_dark,
+    title: "Education",
+    description:
+      "Master of Computer Applications (TCE),\n\nB.Sc in Computer Science",
+  },
+  {
+    icon: assets.web_icon, // add a new asset icon for web
+    iconDark: assets.web_icon_dark,
+    title: "Web",
+    description: "HTML, CSS, Node.js, React.js, Express.js",
+  },
+  {
+    icon: assets.db_icon, // database icon
+    iconDark: assets.db_icon_dark,
+    title: "Databases",
+    description: "MongoDB, MySQL",
+  },
+  {
+    icon: assets.cloud_icon, // cloud/devops icon
+    iconDark: assets.cloud_icon_dark,
+    title: "DevOps & Cloud",
+    description: "AWS, Docker, OCI",
+  },
+  {
+    icon: assets.tools_icon, // tools icon
+    iconDark: assets.tools_icon_dark,
+    title: "Tools & OS",
+    description: "Ubuntu, Git, GitHub",
+  },
+];
+
+export const toolsData = [
+    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+];
