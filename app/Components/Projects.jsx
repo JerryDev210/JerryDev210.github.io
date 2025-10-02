@@ -2,7 +2,7 @@ import { assets, projectData } from "@/assets/assets"
 import Image from "next/image"
 const Projects = () => {
   return (
-    <div id='projects' className="w-full h-screen px-[10%] py-10 scroll-mt-10">
+    <div id='projects' className="w-full px-[10%] py-10 scroll-mt-10">
       <h4 className="text-center mb-2 text-lg">
         My porfolio
       </h4>
