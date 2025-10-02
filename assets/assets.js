@@ -124,3 +124,26 @@ export const infoList = [
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
 ];
+
+export const projectData = [
+  {
+    title: 'Portfolio Website',
+    description: 'My skills, projects \n& journey',
+    bgImage: '/portfolio.png',
+  },
+  {
+    title: 'Ecofinds',
+    description: 'Odoo Hackathon',
+    bgImage: '/ecofind-bg.png',
+  },
+  {
+    title: 'Heal n Glow',
+    description: 'Growing startup',
+    bgImage: '/healnglow.png',
+  },
+  {
+    title: 'Event Organizer',
+    description: 'WhatsApp-powered',
+    bgImage: '/event-system.png',
+  },
+];
