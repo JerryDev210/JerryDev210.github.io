@@ -1,6 +1,9 @@
 import { assets, projectData } from "@/assets/assets"
 import Image from "next/image"
+import { useTheme } from './ThemeProvider'
+
 const Projects = () => {
+  const { isDark } = useTheme();
   return (
     <div id='projects' className="w-full px-[10%] py-10 scroll-mt-10">
       <h4 className="text-center mb-2 text-lg">
@@ -13,7 +16,7 @@ const Projects = () => {
         Welcome to my porfolio! Explore the collection of projects showcasing 
         my expertise in front-end & back-end development.
       </p>
-      <div className="grid grid-cols-auto my-10 gap-5">
+      <div className="grid grid-cols-auto my-10 gap-5 dark:text-black">
         {projectData.map((project, index)=>(
             <div key={index} 
             className="aspect-square bg-no-repeat bg-cover bg-center 
@@ -37,10 +40,10 @@ const Projects = () => {
             </div>
         ))}
       </div>
-      <a href="#" className="w-max flex items-center justify-center gap-2
+      <a href="https://github.com/JerryDev210?tab=repositories" className="w-max flex items-center justify-center gap-2
       text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10
-      mx-auto my-20 hover:bg-light-hover duration-500">
-        Show more <Image src={assets.right_arrow_bold} alt=''
+      mx-auto my-20 hover:bg-light-hover duration-500 dark:text-white dark:border-white dark:hover:bg-dark-hover">
+        Show more <Image src={isDark?assets.right_arrow_bold_dark:assets.right_arrow_bold} alt=''
         className="w-4"/>
       </a>
     </div>

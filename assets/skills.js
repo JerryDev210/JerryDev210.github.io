@@ -29,15 +29,17 @@ import oracle from "@/public/svg/oracle.svg";
 
 import azure from "@/public/svg/azure.svg";
 import github from "@/public/svg/github.svg";
+import githubWhite from "@/public/svg/github-white.svg";
 import git from "@/public/svg/git.svg";
 import docker from "@/public/svg/docker.svg";
 import heroku from "@/public/svg/heroku.svg";
 import vercel from "@/public/svg/vercellight.svg";
 import aws from "@/public/svg/aws.svg";
+import awsLight from "@/public/svg/aws-light.svg";
 import ubunut from "@/public/svg/ubuntu.svg"
 export const skillsList = [
   { icon:git, name:'Git'},
-  { icon:github, name:'Github'},
+  { icon:github,darkIcon:githubWhite , name:'Github'},
   { icon:docker,name:'Docker'},
   { icon:heroku,name:'Heroku'},
   { icon:vercel, name:'Vercel'},
@@ -64,7 +66,7 @@ export const skillsList = [
   { icon: oracle, name: "Oracle" },
 
   { icon: azure, name: "Azure" },
-  { icon: aws, name:'AWS'},
+  { icon: aws, darkIcon: awsLight, name:'AWS'},
   { icon:ubunut, name:'Ubuntu'},
 
 ];

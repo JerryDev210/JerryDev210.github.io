@@ -38,6 +38,8 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import db_icon from "./mongodb.png";
 import cloud_icon from './firebase.png';
 import tools_icon from './vscode.png';
+import github from './github.svg';
+import linkedin from './linkedin.svg';
 export const assets = {
     user_image,
     code_icon,
@@ -79,6 +81,8 @@ export const assets = {
     db_icon,
     cloud_icon,
     tools_icon,
+    github,
+    linkedin
 };
 
 export const infoList = [
@@ -97,25 +101,25 @@ export const infoList = [
   },
   {
     icon: assets.web_icon, // add a new asset icon for web
-    iconDark: assets.web_icon_dark,
+    iconDark: assets.web_icon,
     title: "Web",
     description: "HTML, CSS, Node.js, React.js, Express.js",
   },
   {
     icon: assets.db_icon, // database icon
-    iconDark: assets.db_icon_dark,
+    iconDark: assets.db_icon,
     title: "Databases",
     description: "MongoDB, MySQL",
   },
   {
     icon: assets.cloud_icon, // cloud/devops icon
-    iconDark: assets.cloud_icon_dark,
+    iconDark: assets.cloud_icon,
     title: "DevOps & Cloud",
     description: "AWS, Docker, OCI",
   },
   {
     icon: assets.tools_icon, // tools icon
-    iconDark: assets.tools_icon_dark,
+    iconDark: assets.tools_icon,
     title: "Tools & OS",
     description: "Ubuntu, Git, GitHub",
   },

@@ -1,8 +1,10 @@
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { useTheme } from './ThemeProvider'
 
 const About = () => {
+  const { isDark, toggle } = useTheme();
   return (
     <div id='about' className='w-full px-[10%] py-10 scroll-mt-10'>
       <h4 className='text-center mb-2 text-lg'>Introduction</h4>
@@ -18,14 +20,15 @@ const About = () => {
                 {infoList.map(({icon,iconDark,title,description},index)=>(
                     <li key={index}
                     className='border-[0.5px] border-gray-400
-                    rounded-xl p-6 cursor-pointer hover:bg-light-hover 
-                    hover:-translate-y-1 duration-500 hover:shadow-black'>
+                    rounded-xl p-6 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover:shadow-black 
+                    dark:border-white dark:hover:shadow-white dark:hover:bg-dark-hover/50'>
                         <div className='flex items-center gap-3'>
-                            <Image src={icon} alt={title} className='w-7'/>
-                            <h3 className='my-4 font-semibold text-gray-700'>
+                            <Image src={isDark?iconDark:icon} alt={title} className='w-7'/>
+                            <h3 className='my-4 font-semibold text-gray-700
+                            dark:text-white'>
                                 {title}</h3>    
                         </div>
-                        <p className='text-gray-700 text-sm'>
+                        <p className='text-gray-700 text-sm dark:text-white/80'>
                             {description}</p>
                     </li>
                 ))}
