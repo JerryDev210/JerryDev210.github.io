@@ -17,8 +17,8 @@ const Hero = () => {
             Full-stack developer from Sundarapandiam.
         </h1>
         <p className="max-w-2xl mx-auto">
-            I am a Full-stack developer, currently persuing MCA degree at Thiagarajar College of Engineering, Madurai. 
-            And interested in Cloud Computing, DevOps.
+        I am a Full-stack Developer currently pursuing an MCA at Thiagarajar College of Engineering, Madurai, 
+        with a strong interest in Cloud Computing and DevOps
         </p>
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <a href="#contact"

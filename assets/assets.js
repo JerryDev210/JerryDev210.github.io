@@ -87,43 +87,47 @@ export const assets = {
 
 export const infoList = [
   {
-    icon: assets.code_icon,
-    iconDark: assets.code_icon_dark,
-    title: "Languages",
-    description: "C, C++, Python, Java, JavaScript",
-  },
-  {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description:
-      "Master of Computer Applications (TCE),\n\nB.Sc in Computer Science",
+    description: [
+      "Master of Computer Applications \n(TCE, Madurai)",
+      "B.Sc in Computer Science\n(Kalasanlingam, Krishnankoil)",
+      'HSC & SSLC\n(Govt. Hr. Sec. School, Sundarapandiam) '
+    ],
   },
   {
-    icon: assets.web_icon, // add a new asset icon for web
-    iconDark: assets.web_icon,
-    title: "Web",
-    description: "HTML, CSS, Node.js, React.js, Express.js",
-  },
-  {
-    icon: assets.db_icon, // database icon
-    iconDark: assets.db_icon,
-    title: "Databases",
-    description: "MongoDB, MySQL",
-  },
-  {
-    icon: assets.cloud_icon, // cloud/devops icon
-    iconDark: assets.cloud_icon,
-    title: "DevOps & Cloud",
-    description: "AWS, Docker, OCI",
-  },
-  {
-    icon: assets.tools_icon, // tools icon
-    iconDark: assets.tools_icon,
-    title: "Tools & OS",
-    description: "Ubuntu, Git, GitHub",
-  },
+    icon: assets.project_icon,
+    iconDark: assets.project_icon_dark,
+    title: "Areas of Interest",
+    description: [
+      'Back-end Development',
+      "Cloud Computing",
+      "DevOps",
+      'Programming in Java & Python',
+    ],
+  }
 ];
+
+  // {
+  //   icon: assets.db_icon, // database icon
+  //   iconDark: assets.db_icon,
+  //   title: "Databases",
+  //   description: "MongoDB, MySQL",
+  // },
+  // {
+  //   icon: assets.cloud_icon, // cloud/devops icon
+  //   iconDark: assets.cloud_icon,
+  //   title: "DevOps & Cloud",
+  //   description: "AWS, Docker, OCI",
+  // },
+  // {
+  //   icon: assets.tools_icon, // tools icon
+  //   iconDark: assets.tools_icon,
+  //   title: "Tools & OS",
+  //   description: "Ubuntu, Git, GitHub",
+  // },
+
 
 export const toolsData = [
     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git

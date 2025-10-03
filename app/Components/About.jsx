@@ -15,21 +15,31 @@ const About = () => {
             className='w-full rounded-3xl'/>
         </div>
         <div className='flex-1'>
-            <p className='mb-10 max-w-2xl'>I’m a Full-Stack Developer pursuing my MCA at Thiagarajar College of Engineering, Madurai. I’m interested in Cloud Computing and DevOps, and I have hands-on experience with Java, MERN stack development, and Linux, which helps me build scalable and user-friendly applications.</p>
-            <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
+            <p className='mb-10 max-w-2xl'>
+            &emsp;&emsp;I’m a Full-Stack Developer currently pursuing my MCA degree at Thiagarajar College of Engineering, Madurai. 
+            With hands-on experience in Java, MERN stack development, and Linux, 
+            I enjoy building scalable, efficient, and user-friendly applications. 
+            I’m particularly interested in Cloud Computing and DevOps, and 
+            I’m learning how they can improve the way applications are built and deployed.</p>
+            <ul className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl'>
                 {infoList.map(({icon,iconDark,title,description},index)=>(
                     <li key={index}
                     className='border-[0.5px] border-gray-400
                     rounded-xl p-6 cursor-pointer hover:bg-light-hover hover:-translate-y-1 duration-500 hover:shadow-black 
                     dark:border-white dark:hover:shadow-white dark:hover:bg-dark-hover/50'>
-                        <div className='flex items-center gap-3'>
+                        <div className='flex items-center gap-3 mb-2'>
                             <Image src={isDark?iconDark:icon} alt={title} className='w-7'/>
-                            <h3 className='my-4 font-semibold text-gray-700
+                            <h3 className='my-2 font-semibold text-gray-700
                             dark:text-white'>
                                 {title}</h3>    
                         </div>
-                        <p className='text-gray-700 text-sm dark:text-white/80'>
-                            {description}</p>
+                        {/* <p className='text-gray-700 text-sm dark:text-white/80'>
+                            {description}</p> */}
+                        <ul className='whitespace-pre-line list-disc pl-5 text-gray-700 text-sm dark:text-white space-y-2'>
+                            {description.map((item, i) => (
+                              <li key={i}>{item}</li>
+                            ))}
+                          </ul>
                     </li>
                 ))}
             </ul>
