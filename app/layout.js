@@ -13,12 +13,12 @@ export const metadata = {
   openGraph: {
     title: "Ramkumar G - Portfolio",
     description: "Explore my projects, skills, and experience.",
-    url: "https://JerryDev210.github.io",
+    url: "https://ramkumar.is-a.dev",
     type: "website",
-    image: "https://JerryDev210.github.io/preview.png", // Explicitly define the og:image
+    image: "https://ramkumar.is-a.dev//preview.png", // Explicitly define the og:image
     images: [
       {
-        url: "https://JerryDev210.github.io/preview.png", // Explicit image URL
+        url: "https://ramkumar.is-a.dev//preview.png", // Explicit image URL
         width: 1200, // Recommended width
         height: 630, // Recommended height
         alt: "Ramkumar G - Portfolio Preview", // Alt text for accessibility
